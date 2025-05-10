@@ -4,7 +4,7 @@ import { MainHeaderButton } from "../main_header_button";
 
 export function MainHeaderNav() {
   return (
-    <nav className="w-full flex justify-between">
+    <nav className="w-full flex justify-between flex-col gap-2 items-start">
       <div className="flex gap-1">
         <MainHeaderTitle title="Área" />
         <Image alt="" src={""} />
@@ -16,8 +16,9 @@ export function MainHeaderNav() {
         <MainHeaderTitle title="Vantagens da Nossa Pós" />
       </div>
       <MainHeaderTitle title="Depoimentos" />
-      <div>
-        <MainHeaderButton color="green" hasIcon={true} title="Matrícula da sorte" icon={}/>
+      <div className="w-11/12 flex flex-col gap-2">
+        <MainHeaderButton color="green" hasIcon={true} title="Matrícula da sorte" icon={""}/>
+        <MainHeaderButton color="pink" hasIcon={false} title="Fale conosco" icon={""}/>
       </div>
     </nav>
   );

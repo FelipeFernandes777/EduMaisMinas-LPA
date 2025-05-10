@@ -5,7 +5,7 @@ interface IMainHeaderTitleProps {
 
 export function MainHeaderTitle({title}: IMainHeaderTitleProps){
   return (
-    <span>
+    <span className="text-black font-medium">
       {title.toUpperCase()}
     </span>
   )
