@@ -3,6 +3,7 @@ import { Benefits } from "@/components/ui/benefits";
 import { Courses } from "@/components/ui/courses";
 import MainContainer from "@/components/ui/main_container";
 import { Prices } from "@/components/ui/prices";
+import { Testimonials } from "@/components/ui/testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Benefits />
         <Courses />
         <Prices />
+        <Testimonials />
       </MainContainer>
     </div>
   );
