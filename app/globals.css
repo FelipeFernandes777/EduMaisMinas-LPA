@@ -4,4 +4,7 @@
   --background: #ffffff;
   --primary-text-color: #212148;
   --primary-pink: #E71F5D;
+
+  scroll-behavior: smooth;
+  transition: ease-in-out;
 }

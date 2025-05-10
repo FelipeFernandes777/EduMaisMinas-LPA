@@ -7,7 +7,7 @@ export function PricesCardContainer({
 }) {
   return (
     <div
-      className={`${className} w-full h-[750px] shadow-lg rounded-lg flex flex-col items-center py-4`}
+      className={`${className} w-full min-h-[750px] shadow-lg rounded-lg flex flex-col items-center py-4`}
     >
       {children}
     </div>

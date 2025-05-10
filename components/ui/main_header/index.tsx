@@ -18,7 +18,7 @@ export default function MainHeader() {
         <Image
           alt="Logo da empresa EducaMaisMinas"
           src={headerLogo}
-          className="w-5/12 h-auto"
+          className="w-5/12 h-auto min-sm:w-3/12"
         />
         <div
           className="flex items-center justify-center w-1/6 h-auto cursor-pointer transition-all duration-300 ease-in-out"

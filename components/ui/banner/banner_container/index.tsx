@@ -5,7 +5,7 @@ export function BannerContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full h-[600px]">
+    <div className="w-full h-auto">
       {children}
     </div>
   );

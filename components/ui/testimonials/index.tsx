@@ -66,7 +66,7 @@ export function Testimonials() {
   }, [isPaused]);
 
   return (
-    <div className="flex flex-col w-full h-[600px] p-4">
+    <div className="flex flex-col w-full h-[600px] p-4" id="depoimentos">
       <h1 className="text-3xl text-[var(--primary-text-color)] tracking-tight text-center font-medium">
         Depoimentos que Inspiram
       </h1>

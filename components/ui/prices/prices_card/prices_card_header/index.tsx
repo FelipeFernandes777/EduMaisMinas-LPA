@@ -27,6 +27,13 @@ export function PricesCardHeader({
 }: PricesCardHeaderProps) {
   return (
     <PricesCardHeaderContainer>
+      {offer.cardI === 3 ? (
+        <div className="w-[130px] flex items-center justify-center mb-3 rounded-2xl p-1 bg-white shadow-m absolute top-[-20px] right-[-20px]">
+          <p className="text-[var(--primary-text-color)] font-bold">
+            MAIS VENDIDO
+          </p>
+        </div>
+      ) : null}
       <PricesCardHeaderTitle title={title} />
       <PricesCardHeaderInfoContainer>
         <PricesCardHeaderSubTitle quantity={quantity} />
@@ -37,7 +44,7 @@ export function PricesCardHeader({
         />
       </PricesCardHeaderInfoContainer>
       <PricesCardHeaderOffer cardI={offer.cardI} price={offer.price} />
-      <PricesCardHeaderExclusive quantity={quantity}/>
+      <PricesCardHeaderExclusive quantity={quantity} />
     </PricesCardHeaderContainer>
   );
 }

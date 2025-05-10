@@ -114,7 +114,7 @@ export function Prices() {
         list: [{ title: "CONSULTE CONDIÇÕES ESPECIAIS" }],
       },
       className:
-        "bg-gradient-to-br from-[var(--primary-pink)] via-[var(--primary-pink)]/90 to-[var(--primary-pink)]/70",
+        "bg-gradient-to-br from-gray-400 via-gray-600/90 to-[var(--primary-text-color)]/70",
     },
   ];
 

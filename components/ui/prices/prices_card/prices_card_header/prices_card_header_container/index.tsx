@@ -5,7 +5,7 @@ export function PricesCardHeaderContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full h-auto flex items-center justify-center flex-col">
+    <div className="w-full h-auto flex items-center justify-center flex-col relative">
       {children}
     </div>
   );

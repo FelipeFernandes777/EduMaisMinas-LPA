@@ -19,7 +19,7 @@ export function MainHeaderButton({
         hasIcon ? "gap-3" : null
       } ${
         color == "green" ? "bg-[#16A34A]" : "bg-[#E91C59]"
-      } p-2 rounded-md w-full font-medium text-white text-[17px]`}
+      } p-2 rounded-md w-full font-medium text-white text-[17px] min-sm:text-2xl`}
     >
       {title}
       {hasIcon ? (
