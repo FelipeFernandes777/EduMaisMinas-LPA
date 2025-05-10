@@ -12,7 +12,7 @@ export function CoursesCardImageContent({
   description_course,
 }: ICoursesCardImageContentProps) {
   return (
-    <div className="relative h-full w-full group rounded-xl shadow-md">
+    <div className="h-full w-full group rounded-xl shadow-md">
       <Image
         alt={alt}
         src={src}
