@@ -1,5 +1,6 @@
 import { Banner } from "@/components/ui/banner";
 import { Benefits } from "@/components/ui/benefits";
+import { Courses } from "@/components/ui/courses";
 import MainContainer from "@/components/ui/main_container";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <MainContainer>
         <Benefits />
+        <Courses />
       </MainContainer>
     </div>
   );

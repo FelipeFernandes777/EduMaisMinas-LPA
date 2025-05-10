@@ -1,7 +1,7 @@
 
 export function BenefitsCardDescription({description}: {description: string}) {
   return (
-    <p className="text-sm text-center text-[rgb(28 27 58)]">
+    <p className="text-sm text-center text-[var(--primary-text-color)]">
       {description}
     </p>
   )
