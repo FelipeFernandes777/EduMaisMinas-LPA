@@ -1,6 +1,6 @@
 export function CoursesCardTitle({ title }: { title: string }) {
   return (
-    <span className="text-[var(--primary-text-color)] text-lg font-bold bg-gray-200 rounded-2xl w-[150px] flex items-center justify-center p-2">
+    <span className="text-[var(--primary-text-color)] text-lg font-bold w-[180px] px-2">
       {title}
     </span>
   );

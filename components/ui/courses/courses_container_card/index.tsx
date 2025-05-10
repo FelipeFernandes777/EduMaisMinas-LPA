@@ -5,7 +5,7 @@ export function CoursesCardContainer({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full gap-4 p-4">
+    <div className="flex items-center justify-center w-full h-[200px] p-4 shadow-md border border-gray-100">
       {children}
     </div>
   );

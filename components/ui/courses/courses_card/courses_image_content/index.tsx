@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export interface ICoursesCardImageContentProps {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   description_course: string;
 }
@@ -12,7 +12,7 @@ export function CoursesCardImageContent({
   description_course,
 }: ICoursesCardImageContentProps) {
   return (
-    <div className="relative h-2/5 group">
+    <div className="relative h-full w-full group rounded-xl shadow-md">
       <Image
         alt={alt}
         src={src}

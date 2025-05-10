@@ -1,6 +1,6 @@
 import { CoursesCardContainer } from "../courses_container_card";
 import { CoursesCardButton } from "./courses_card_button";
-import { CoursesCardDescription } from "./courses_card_description";
+// import { CoursesCardDescription } from "./courses_card_description";
 import { CoursesCardTitle } from "./courses_card_title";
 import {
   CoursesCardImageContent,
@@ -10,22 +10,29 @@ import {
 interface ICoursesCard {
   image: ICoursesCardImageContentProps;
   title: string;
-  description: string;
+  // description: string;
 }
 
-export function CoursesCard({ title, description, image }: ICoursesCard) {
+export function CoursesCard({ title, image }: ICoursesCard) {
   return (
     <CoursesCardContainer>
-      <CoursesCardImageContent
-        src={image.src}
-        alt={image.alt}
-        description_course={image.description_course}
-      />
-      <div className="p-2 flex flex-col gap-5">
-        <CoursesCardTitle title={title} />
-        <CoursesCardDescription description={description} />
+      <div className="w-2/5 h-full ">
+        <CoursesCardImageContent
+          src={image.src}
+          alt={image.alt}
+          description_course={image.description_course}
+        />
       </div>
-      <CoursesCardButton />
+      <div className="p-2 flex flex-col gap-5 w-3/5">
+        <div className="flex items-center gap-2">
+          <span className="p-1 text-white bg-[var(--primary-pink)] rounded-2xl text-sm w-[80px] flex items-center justify-center font-medium">
+            Pós EAD
+          </span>
+        </div>
+        <CoursesCardTitle title={title} />
+        {/* <CoursesCardDescription description={description} /> */}
+        <CoursesCardButton />
+      </div>
     </CoursesCardContainer>
   );
 }
