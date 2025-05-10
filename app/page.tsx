@@ -1,4 +1,5 @@
 import { Banner } from "@/components/ui/banner";
+import { Benefits } from "@/components/ui/benefits";
 import MainContainer from "@/components/ui/main_container";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Banner />
       <MainContainer>
-        <p>Teste</p>
+        <Benefits />
       </MainContainer>
     </div>
   );
