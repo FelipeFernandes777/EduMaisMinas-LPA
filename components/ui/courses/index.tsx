@@ -16,7 +16,7 @@ export function Courses() {
     title: "UX/UI",
     description:
       "Aprenda a criar interfaces incríveis e funcionais com foco na experiência do usuário.",
-  }
+  };
   // const courses = [
   //   {
   //     image: {
@@ -60,21 +60,16 @@ export function Courses() {
         </div>
         <CoursesSubTitle />
       </div>
-      {/* <div className="flex flex-col items-center justify-center w-full h-full gap-4 p-4">
-        {courses.map((course, index) => (
-          <CoursesCard
-            key={index}
-            image={course.image}
-            title={course.title}
-            description={course.description}
-          />
-        ))}
-      </div> */}
-      <CoursesCard
-            image={coursestest.image}
-            title={coursestest.title}
-            // description={coursestest.description}
-          />
+      <div className="grid grid-cols-1 place-items-center place-content-center w-full h-full gap-4 p-4">
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+        <CoursesCard image={coursestest.image} title={coursestest.title} />
+      </div>
     </CoursesContainer>
   );
 }

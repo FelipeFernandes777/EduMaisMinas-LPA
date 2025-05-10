@@ -26,9 +26,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="logo_24x24.png" type="image/x-icon" />
       </head>
       <body className={`${poppinsFont.variable} antialiased`}>
-        <header className="w-auto h-auto">
-          <MainHeader />
-        </header>
+        <MainHeader />
         {children}
         <footer></footer>
       </body>
