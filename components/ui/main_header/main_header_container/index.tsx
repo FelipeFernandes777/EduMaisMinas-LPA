@@ -1,11 +1,9 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
-export function MainHeaderContainer({children}: {
-  children: ReactNode
-}) {
+export function MainHeaderContainer({ children }: { children: ReactNode }) {
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center bg-white gap-2 sticky">
+    <div className="w-full h-auto flex flex-col items-center justify-center bg-white gap-2 sticky top-0 z-50">
       {children}
-    </div>  
-  )
+    </div>
+  );
 }

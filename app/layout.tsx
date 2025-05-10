@@ -8,7 +8,7 @@ const poppinsFont = Poppins({
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-})
+});
 
 export const metadata: Metadata = {
   title: "EducaMaisMinas - Pós-graduação",
@@ -23,17 +23,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="shortcut icon" href="logo_24x24.png" type="image/x-icon" /> 
+        <link rel="shortcut icon" href="logo_24x24.png" type="image/x-icon" />
       </head>
-      <body
-        className={`${poppinsFont.variable} antialiased`}
-      >
-        <header>
+      <body className={`${poppinsFont.variable} antialiased`}>
+        <header className="w-auto h-auto">
           <MainHeader />
         </header>
-        <main>
         {children}
-        </main>
         <footer></footer>
       </body>
     </html>
