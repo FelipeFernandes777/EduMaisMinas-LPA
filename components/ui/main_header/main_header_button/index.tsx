@@ -1,19 +1,36 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image";
 
 interface IMainHeaderButton {
-  title: string,
-  color: string
-  icon: string
-  hasIcon: boolean
+  title: string;
+  color: "green" | "pink";
+  icon: string | StaticImageData;
+  hasIcon: boolean;
 }
 
-export function MainHeaderButton({title,color,icon,hasIcon}: IMainHeaderButton) {
+export function MainHeaderButton({
+  title,
+  color,
+  icon,
+  hasIcon,
+}: IMainHeaderButton) {
   return (
-    <button className={`flex items-center justify-center ${hasIcon ? "gap-3" : null} ${color == "green" ? "bg-[#16A34A]" : "bg-[#E91C59]"} p-2 rounded-md w-full font-medium text-white`}>
+    <button
+      className={`flex items-center justify-center ${
+        hasIcon ? "gap-3" : null
+      } ${
+        color == "green" ? "bg-[#16A34A]" : "bg-[#E91C59]"
+      } p-2 rounded-md w-full font-medium text-white text-[17px]`}
+    >
       {title}
-      {
-        hasIcon ? (<Image  alt="Trevo" src={icon}/>) : null
-      }
+      {hasIcon ? (
+        <Image
+          alt="Ícone do botão"
+          src={icon}
+          width={25}
+          height={25}
+          className="w-1/12 h-auto"
+        />
+      ) : null}
     </button>
-  )
+  );
 }

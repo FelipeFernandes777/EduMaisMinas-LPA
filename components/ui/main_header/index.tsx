@@ -18,17 +18,17 @@ export default function MainHeader() {
         <Image
           alt="Logo da empresa EducaMaisMinas"
           src={headerLogo}
-          className="w-2/6 h-auto object-contain"
+          className="w-5/12 h-auto"
         />
         <div
-          className="flex items-center justify-center w-1/6 h-auto cursor-pointer"
+          className="flex items-center justify-center w-1/6 h-auto cursor-pointer transition-all duration-300 ease-in-out"
           onClick={handleMenuButton}
         >
           {isOpen == false ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -44,8 +44,8 @@ export default function MainHeader() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
