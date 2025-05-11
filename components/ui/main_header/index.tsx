@@ -18,10 +18,10 @@ export default function MainHeader() {
         <Image
           alt="Logo da empresa EducaMaisMinas"
           src={headerLogo}
-          className="w-5/12 h-auto min-sm:w-3/12"
+          className="w-5/12 h-auto min-sm:w-3/12 min-md:w-2/12"
         />
         <div
-          className="flex items-center justify-center w-1/6 h-auto cursor-pointer transition-all duration-300 ease-in-out"
+          className="flex items-center justify-center w-1/6 h-auto cursor-pointer transition-all duration-300 ease-in-out min-[769px]:hidden"
           onClick={handleMenuButton}
         >
           {isOpen == false ? (
@@ -59,10 +59,11 @@ export default function MainHeader() {
             </svg>
           )}
         </div>
+        <div className="w-full h-auto max-[769px]:hidden">
+          <MainHeaderNav />
+        </div>
       </div>
-      {
-        isOpen ? <MainHeaderNav /> : null
-      }
+      {isOpen ? <MainHeaderNav /> : null}
     </MainHeaderContainer>
   );
 }

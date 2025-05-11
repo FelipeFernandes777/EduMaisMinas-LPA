@@ -16,15 +16,15 @@ interface ICoursesCard {
 export function CoursesCard({ title, image }: ICoursesCard) {
   return (
     <CoursesCardContainer>
-      <div className="w-2/5 h-full min-sm:w-3/5">
+      <div className="w-2/5 h-full min-sm:w-3/5 min-[769px]:!w-full">
         <CoursesCardImageContent
           src={image.src}
           alt={image.alt}
           description_course={image.description_course}
         />
       </div>
-      <div className="p-2 flex flex-col gap-5 w-3/5">
-        <div className="flex items-center gap-2">
+      <div className="p-2 flex flex-col gap-5 w-3/5 min-[769px]:mb-10 min-[769px]:text-center min-[769px]:w-full">
+        <div className="flex items-center gap-2 min-[769px]:hidden">
           <span className="p-1 text-white bg-[var(--primary-pink)] rounded-2xl text-sm w-[80px] flex items-center justify-center font-medium">
             Pós EAD
           </span>

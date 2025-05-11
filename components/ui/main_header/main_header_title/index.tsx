@@ -6,7 +6,7 @@ interface IMainHeaderTitleProps {
 
 export function MainHeaderTitle({title, id}: IMainHeaderTitleProps){
   return (
-    <a href={"#" + id} className="text-[var(--primary-text-color)] max-sm:font-normal font-medium cursor-pointer min-sm:text-xl">
+    <a href={"#" + id} className="text-[var(--primary-text-color)] max-sm:font-normal font-medium cursor-pointer min-sm:text-xl min-md:text-[16px]">
       {title.toUpperCase()}
     </a>
   )

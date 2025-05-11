@@ -119,7 +119,7 @@ export function Courses() {
         </div>
         <CoursesSubTitle />
       </div>
-      <div className="grid grid-cols-1 place-items-center place-content-center w-full h-full gap-4 p-4">
+      <div className="grid grid-cols-1 place-items-center place-content-center w-full h-full gap-4 p-4  min-[769px]:grid min-[769px]:grid-cols-3 min-[769px]:place-items-center">
         {courses.map((coursestest) => (
           <CoursesCard
             key={coursestest.title}
