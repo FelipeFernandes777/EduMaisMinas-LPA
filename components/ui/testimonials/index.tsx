@@ -66,12 +66,12 @@ export function Testimonials() {
   }, [isPaused]);
 
   return (
-    <div className="flex flex-col w-full h-[600px] p-4" id="depoimentos">
+    <div className="flex flex-col w-full h-[600px] p-4 min-sm:h-[750px]" id="depoimentos">
       <h1 className="text-3xl text-[var(--primary-text-color)] tracking-tight text-center font-medium">
         Depoimentos que Inspiram
       </h1>
       <div className="w-full h-full flex items-center justify-center">
-        <div className="w-4/6 h-5/6 border-6 rounded-4xl border-[var(--primary-color)] bg-white flex flex-col items-center justify-evenly p-2">
+        <div className="w-4/6 h-5/6 border-3 rounded-4xl border-[var(--primary-color)] bg-white flex flex-col items-center justify-evenly p-2 min-sm:w-3/6">
           <div className="w-1/6 border-3 border-gray-600/50 rounded-4xl"></div>
           <div className="w-full h-full flex flex-col items-center justify-center">
             <div className="w-full h-10/12 flex items-center justify-center relative">
