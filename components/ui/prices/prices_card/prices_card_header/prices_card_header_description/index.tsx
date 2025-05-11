@@ -12,7 +12,7 @@ export function PricesCardHeaderDescription({
   return (
     <>
       {quantity < 3 ? (
-        <div className="flex flex-col items-center mt-2">
+        <div className="flex flex-col items-center mt-2 min-sm:p-2">
           <span className="text-[var(--primary-text-color)] font-medium text-center text-xl tracking-tight">
             {title}
           </span>
@@ -21,7 +21,7 @@ export function PricesCardHeaderDescription({
           </span>
         </div>
       ) : (
-        <div className="flex flex-col items-center mt-2">
+        <div className="flex flex-col items-center mt-2 min-sm:p-2">
           <span className="text-white/95 font-medium text-center text-xl tracking-tight">
             {title}
           </span>

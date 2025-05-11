@@ -8,7 +8,7 @@ export function BenefitsCardImage({src,alt}: {src: string, alt: string}) {
       alt={alt}
       width={112}
       height={112}
-      className="object-cover w-28 h-28 rounded-full"
+      className="object-cover w-28 h-28 rounded-full min-sm:w-40 min-sm:h-40"
     />
   </div>
   )

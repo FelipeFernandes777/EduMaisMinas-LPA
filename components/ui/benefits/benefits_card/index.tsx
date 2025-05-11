@@ -11,7 +11,7 @@ interface BenefitsCardProps {
 
 export function BenefitsCard({alt,src,title,description}: BenefitsCardProps) {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-[300px] bg-white p-4 rounded-lg shadow-md gap-5">
+    <div className="flex flex-col items-center justify-center w-full h-[300px] bg-white p-4 rounded-lg shadow-md gap-5 min-sm:w-5/6">
       <BenefitsCardImage alt={alt} src={src}/>
       <BenefitsCardTitle title={title}/>
       <BenefitsCardDescription description={description}/>

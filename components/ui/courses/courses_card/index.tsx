@@ -16,7 +16,7 @@ interface ICoursesCard {
 export function CoursesCard({ title, image }: ICoursesCard) {
   return (
     <CoursesCardContainer>
-      <div className="w-2/5 h-full ">
+      <div className="w-2/5 h-full min-sm:w-3/5">
         <CoursesCardImageContent
           src={image.src}
           alt={image.alt}

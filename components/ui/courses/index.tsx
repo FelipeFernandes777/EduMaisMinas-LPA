@@ -111,7 +111,7 @@ export function Courses() {
 
   return (
     <CoursesContainer>
-      <div className="flex flex-col items-center w-full h-full">
+      <div className="flex flex-col items-center w-full h-full mt-4">
         <div className="flex items-center gap-2">
           <CoursesTitle title="Áreas" />
           <Image alt="Imagem do simbolo de +" src={plus} className="w-6 h-6" />
